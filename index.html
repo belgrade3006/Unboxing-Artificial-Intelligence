@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unboxing Artificial Intelligence</title>
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        /* The Grid System that holds the tiles */
+        .grid-container {
+            display: grid;
+            /* This makes the grid responsive: tiles are at least 250px wide */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Individual Tile Styling */
+        .tile {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none; /* Removes the underline from links */
+            color: inherit;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Hover effect when the mouse goes over a tile */
+        .tile:hover {
+            transform: translateY(-5px); /* Lifts the tile up slightly */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #007bff; /* Changes border color to blue */
+        }
+
+        .tile h2 {
+            margin: 0 0 10px 0;
+            font-size: 1.5rem;
+            color: #007bff;
+        }
+
+        .tile p {
+            margin: 0;
+            color: #6c757d;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Unboxing Artificial Intelligence</h1>
+
+    <div class="grid-container">
+
+	<a href="Python Basics.html" class="tile">
+            <h2>Python Basics</h2>
+            <p>Beginner's guide to Python</p>
+        </a>
+
+	<a href="Mathematics for AI.html" class="tile">
+            <h2>Mathematics for AI</h2>
+            <p>Mathematics required to understand AI</p>
+        </a>
+        
+	<a href="Introduction to NumPy.html" class="tile">
+            <h2>Introduction to NumPy</h2>
+            <p>Handling Mathematics in AI in Python</p>
+        </a>
+
+        <a href="Introduction to MatPlotLib.html" class="tile">
+            <h2>Introduction to MatPlotLib</h2>
+            <p>Plotting in Python</p>
+        </a>
+
+
+        <a href="#" class="tile">
+            <h2>Future Project</h2>
+            <p>Coming soon...</p>
+        </a>
+
+    </div>
+
+</body>
+</html>
